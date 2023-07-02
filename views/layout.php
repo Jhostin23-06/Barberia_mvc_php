@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>App Salón</title>
+    <link rel="icon" href="/build/img/icono.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700;900&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="/build/css/app.css">
 </head>
@@ -14,7 +16,7 @@
             <?php echo $contenido; ?>
         </div>
     </div>
-
+    
     <?php
         echo $script ?? '';
     ?>

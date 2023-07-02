@@ -39,7 +39,7 @@
                     <p>Hora: <span><?php echo $cita->hora; ?></span></p>
                     <p>Cliente: <span><?php echo $cita->cliente; ?></span></p>
                     <p>Email: <span><?php echo $cita->email; ?></span></p>
-                    <p>Email: <span><?php echo $cita->telefono; ?></span></p>
+                    <p>Teléfono: <span><?php echo $cita->telefono; ?></span></p>
 
                     <h3>Servicios</h3>
             <?php 
@@ -47,14 +47,14 @@
             } // Fin de IF 
                 $total += $cita->precio;
             ?>
-                    <p class="servicio"><?php echo $cita->servicio . " " . $cita->precio; ?></p>
+                    <p class="servicio"><?php echo $cita->servicio; ?> -> <span class="precio">S/.<?php echo $cita->precio; ?> </span></p>
             
             <?php 
                 $actual = $cita->id;
                 $proximo = $citas[$key + 1]->id ?? 0;
 
                 if(esUltimo($actual, $proximo)) { ?>
-                    <p class="total">Total: <span>$ <?php echo $total; ?></span></p>
+                    <p class="total">Total: <span>S/. <?php echo $total; ?></span></p>
 
                     <form action="/api/eliminar" method="POST">
                         <input type="hidden" name="id" value="<?php echo $cita->id; ?>">

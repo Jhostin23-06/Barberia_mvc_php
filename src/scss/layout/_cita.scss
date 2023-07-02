@@ -1,0 +1,41 @@
+
+.seccion {
+    padding: 5rem 0;
+    display: none;
+    
+    .text-center {
+        text-align: center;
+    }
+}
+
+.mostrar {
+    display: block;
+}
+.ocultar {
+    display: none;
+}
+
+.contenedor-sociales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.redes-sociales a {
+    font-size:24px;
+    width:60px;
+    height:60px;
+    line-height:40px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #fff;
+    color:inherit;
+}
+
+.redes-sociales a:hover {
+    opacity:0.5;
+}
