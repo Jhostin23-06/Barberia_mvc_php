@@ -1,5 +1,7 @@
 vendor/
 node_modules/
 appsalon_mvc.sql
-.DS_Store
 .env
+appsalon_mvc.dump
+credenciales.txt
+a

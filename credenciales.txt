@@ -1,0 +1,4 @@
+host: nyc.domcloud.id
+user: barberia2000
+pass: eRZ8_jc9(A8I7w_5sF
+db: barberia2000_db

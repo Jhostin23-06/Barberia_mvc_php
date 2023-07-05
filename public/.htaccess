@@ -3,7 +3,7 @@ RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^ index.php [QSA,L]
 
-DB_BD = heroku_44599070db50bc8
-DB_HOST = us-cdbr-east-06.cleardb.net
-DB_PASS = 8c4a77d7
-DB_USER = b87b1f0539a43f
+DB_BD = barberia2000_db
+DB_HOST = nyc.domcloud.id
+DB_PASS = eRZ8_jc9(A8I7w_5sF
+DB_USER = barberia2000
