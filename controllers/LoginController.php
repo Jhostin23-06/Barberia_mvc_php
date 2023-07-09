@@ -22,7 +22,8 @@ class LoginController {
                     // Verificar el password
                     if( $usuario->comprobarPasswordAndVerificado($auth->password) ) {
                         // Autenticar el usuario
-                        session_start();
+                        // Proteger Rutas...
+                        isSession();
 
                         $_SESSION['id'] = $usuario->id;
                         $_SESSION['nombre'] = $usuario->nombre . " " . $usuario->apellido;
