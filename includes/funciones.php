@@ -33,3 +33,9 @@ function isAdmin() : void {
         header('Location: /');
     }
 }
+
+function isSession() : void {
+    if(!isset($_SESSION)) {
+        session_start();
+    }
+}
