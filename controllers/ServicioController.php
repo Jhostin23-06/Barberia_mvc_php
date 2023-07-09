@@ -7,7 +7,8 @@ use MVC\Router;
 
 class ServicioController {
     public static function index(Router $router) {
-        session_start();
+        // Proteger Rutas...
+        isSession();
 
         isAdmin();
 
